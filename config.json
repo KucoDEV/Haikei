@@ -1,0 +1,22 @@
+{
+    "guilds": {
+        "980538917122101269": {
+            "owner": 484759949566803979,
+            "sanction": "kick",
+            "antispam": false,
+            "antilink": false,
+            "automod": false,
+            "join": "992137796330463262",
+            "autorole": "980539201806270484"
+        },
+        "921144684221444146": {
+            "owner": 484759949566803979,
+            "sanction": "kick",
+            "antispam": false,
+            "antilink": false,
+            "automod": false,
+            "join": false,
+            "autorole": false
+        }
+    }
+}
