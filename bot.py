@@ -17,13 +17,13 @@ intents.members = True
 console = Console()
 client = commands.Bot(command_prefix="+", help_command=None, intents=intents)
 
-inter_client = InteractionClient(client, test_guilds=[980538917122101269])
+inter_client = InteractionClient(client, test_guilds=[votre_guid_id])
 
 # ------------ Cogs ------------ #
 
 @client.command()
 async def load(ctx, extension):
-    if ctx.message.author.id == 484759949566803979 or ctx.message.author.id == 853063343547875328:
+    if ctx.message.author.id == votre_id or ctx.message.author.id == 2eme_id:
         client.load_extension(f'cogs.{extension}')
         embed = discord.Embed(title="Chargement de module", description=f"Je viens de charger le module {extension} !", colour=discord.Color.from_rgb(0, 255, 0))
         await ctx.send(embed=embed)
@@ -31,7 +31,7 @@ async def load(ctx, extension):
 
 @client.command()
 async def unload(ctx, extension):
-    if ctx.message.author.id == 484759949566803979 or ctx.message.author.id == 853063343547875328:
+    if ctx.message.author.id == votre_id or ctx.message.author.id == 2eme_id:
         client.unload_extension(f'cogs.{extension}')
         embed = discord.Embed(title="Déchargement de module", description=f"Je viens de décharger le module {extension} !", colour=discord.Color.from_rgb(255, 0, 0))
         await ctx.send(embed=embed)
@@ -39,7 +39,7 @@ async def unload(ctx, extension):
 
 @client.command()
 async def reload(ctx, extension):
-    if ctx.message.author.id == 484759949566803979 or ctx.message.author.id == 853063343547875328:
+    if ctx.message.author.id == votre_id or ctx.message.author.id == 2eme_id:
         client.reload_extension(f'cogs.{extension}')
         embed = discord.Embed(title="Rechargement de module", description=f"Je viens de recharger le module {extension} !", colour=discord.Color.from_rgb(255, 0, 60))
         await ctx.send(embed=embed)
@@ -83,6 +83,6 @@ async def on_guild_remove(guild):
 
 # ------------ Lancement ------------ #
 
-client.run("OTA2MTc2NTc0NjM2ODM4OTIy.GEf4GH.8LYQih6hOOVhmuJtQ9ZhMzvXsIw8aH6r4asFiY")
+client.run("votre_token")
 
 # ------------ Fin Du Bot ------------ #
