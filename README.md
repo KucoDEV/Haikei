@@ -4,7 +4,7 @@
 
 <a name="readme-top"></a>
 
-# The Auth
+# The Haikei
 
 A next-generation Python Bot for discord
 
