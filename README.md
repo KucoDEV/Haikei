@@ -1,4 +1,4 @@
-# 🤖 Discord Bot Management System
+# 🤖 HAIKEI Bot Discord
 
 ## 📜 Description
 
