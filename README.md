@@ -1,65 +1,54 @@
-<div align="center">
+# 🤖 Discord Bot Management System
 
-<a href="https://gowebly.org" target="_blank" title="Go to the Gowebly CLI website"><img width="196px" alt="gowebly logo" src="https://raw.githubusercontent.com/gowebly/.github/main/images/gowebly-logo.svg"></a>
+## 📜 Description
 
-<a name="readme-top"></a>
+Ce projet est un bot Discord développé en Python utilisant `discord.py` et `dislash` pour offrir diverses fonctionnalités aux serveurs Discord. Il permet la gestion des utilisateurs, des salons, et des commandes personnalisées pour enrichir l'expérience des membres.
 
-# The Haikei
+## ⚡ Fonctionnalités
 
-A next-generation Python Bot for discord
+- Commandes d'administration (chargement/déchargement de modules, gestion des utilisateurs).
+- Système d'aide intégré (`/help`, `/aide`).
+- Commandes d'information (`/ping`, `/serverinfo`, `/userinfo`).
+- Gestion des événements (`on_guild_join`, `on_member_join`).
+- Enregistrement et suivi des logs de messages.
+- Gestion des autorisations avancées pour les propriétaires du bot.
+- Système de signalement et de modération.
+- Suivi du temps de fonctionnement du bot (`/uptime`).
 
-**&searr;&nbsp;&nbsp;The official documentation&nbsp;&nbsp;&swarr;**
+## 🛠️ Prérequis
 
-[English](https://github.com/KucoDEV/Haikei/blob/main/README.md)
+Assurez-vous d'avoir Python installé sur votre machine ainsi que les modules suivants :
 
-**&searr;&nbsp;&nbsp;Share the project's link to your friends&nbsp;&nbsp;&swarr;**
+```
+pip install discord dislash pystyle rich
+```
 
-[![Share on X][x_share_img]][x_share_url]
-[![Share on Telegram][telegram_share_img]][telegram_share_url]
-[![Share on Reddit][reddit_share_img]][reddit_share_url]
+## 🚀 Installation et exécution
 
-</div>
+1. Clonez ce repository ou téléchargez les fichiers.
+2. Ajoutez votre token bot Discord dans `bot.py`.
+3. Exécutez le script avec la commande :
+   ```
+   python bot.py
+   ```
+4. Assurez-vous que votre bot dispose des permissions requises sur le serveur Discord.
 
-## ✨ Features
+## 🖥️ Modules et Extensions
 
-- 100% **free** and **open source**!
-- For **any** developer's level of knowledge and technical expertise, as the intelligent tool does most of the routine project setup for you, creates an understandable structure, and prepares code for use and deployment in production.
-- Enables you to **start a new python project faster**.
-- Ready-to-use discord bot that can run in **any environment**.
+Le bot utilise plusieurs extensions (`cogs`) pour une gestion modulaire :
+- `Aide.py` : Commandes d'aide et d'assistance.
+- `BotUpt.py` : Gestion de l'uptime et des statistiques.
+- `Divers.py` : Informations sur le serveur et les utilisateurs.
+- `Events.py` : Gestion des événements serveur et membres.
+- `Owner.py` : Commandes exclusives au propriétaire du bot.
+- `Snipe.py` : Récupération des derniers messages supprimés.
+- `logMessage.py` : Système de gestion des logs.
+- `utils.py` : Fonctions utilitaires et gestion des configurations.
 
-## ⚡️ Quick start
+## ⚠️ Avertissement
 
-First, [download](https://www.python.org/downloads/) and install **Python**. Version `3.10` (or higher) is required for the code generated.
+Ce projet est destiné à un usage éducatif et ne doit pas être utilisé sur des serveurs en production sans modifications adaptées.
 
-Now, you can use the **Haikei** without installation. Just run the python file!
+## 📜 Licence
 
-That's it! 🔥 A wonderful web application to help you create TKinter window.
-
-<div align="right">
-
-[&nwarr; Back to top](#readme-top)
-
-</div>
-
-## 🌟 Stars
-
-<picture>
-  <source srcset="https://api.star-history.com/svg?repos=KucoDEV/Haikei&type=Date&theme=dark"/>
-  <img width="100%" alt="The Gowebly CLI star history chart" src="https://api.star-history.com/svg?repos=KucoDEV/Haikei&type=Date"/>
-</picture>
-
-## ⚠ License
-
-[`The Haikei`][repo_url] is free and open-source software licensed under the [Apache 2.0 License].
-
-<!-- Repository links -->
-[repo_url]: https://github.com/KucoDEV/Haikei
-
-<!-- Social links -->
-[x_share_url]: https://x.com
-[telegram_share_url]: https://t.me
-[reddit_share_url]: https://www.reddit.com
-[x_share_img]: https://img.shields.io/badge/x_(twitter)-black?style=for-the-badge&logo=x
-[telegram_share_img]: https://img.shields.io/badge/telegram-black?style=for-the-badge&logo=telegram
-[whatsapp_share_img]: https://img.shields.io/badge/whatsapp-black?style=for-the-badge&logo=whatsapp
-[reddit_share_img]: https://img.shields.io/badge/reddit-black?style=for-the-badge&logo=reddit
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
