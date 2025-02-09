@@ -1,54 +1,54 @@
-# 🤖 HAIKEI Bot Discord
+# 🤖 HAIKEI Discord Bot
 
 ## 📜 Description
 
-Ce projet est un bot Discord développé en Python utilisant `discord.py` et `dislash` pour offrir diverses fonctionnalités aux serveurs Discord. Il permet la gestion des utilisateurs, des salons, et des commandes personnalisées pour enrichir l'expérience des membres.
+This project is a Discord bot developed in Python using `discord.py` and `dislash` to provide various features for Discord servers. It allows user management, channel management, and custom commands to enhance the members' experience.
 
-## ⚡ Fonctionnalités
+## ⚡ Features
 
-- Commandes d'administration (chargement/déchargement de modules, gestion des utilisateurs).
-- Système d'aide intégré (`/help`, `/aide`).
-- Commandes d'information (`/ping`, `/serverinfo`, `/userinfo`).
-- Gestion des événements (`on_guild_join`, `on_member_join`).
-- Enregistrement et suivi des logs de messages.
-- Gestion des autorisations avancées pour les propriétaires du bot.
-- Système de signalement et de modération.
-- Suivi du temps de fonctionnement du bot (`/uptime`).
+- Administration commands (loading/unloading modules, user management).
+- Integrated help system (`/help`, `/aide`).
+- Information commands (`/ping`, `/serverinfo`, `/userinfo`).
+- Event management (`on_guild_join`, `on_member_join`).
+- Logging and tracking of messages.
+- Advanced permission management for bot owners.
+- Reporting and moderation system.
+- Bot uptime tracking (`/uptime`).
 
-## 🛠️ Prérequis
+## 🛠️ Prerequisites
 
-Assurez-vous d'avoir Python installé sur votre machine ainsi que les modules suivants :
+Make sure you have Python installed on your machine as well as the following modules:
 
 ```
 pip install discord dislash pystyle rich
 ```
 
-## 🚀 Installation et exécution
+## 🚀 Installation and Execution
 
-1. Clonez ce repository ou téléchargez les fichiers.
-2. Ajoutez votre token bot Discord dans `bot.py`.
-3. Exécutez le script avec la commande :
+1. Clone this repository or download the files.
+2. Add your Discord bot token in `bot.py`.
+3. Run the script with the command:
    ```
    python bot.py
    ```
-4. Assurez-vous que votre bot dispose des permissions requises sur le serveur Discord.
+4. Ensure that your bot has the required permissions on the Discord server.
 
-## 🖥️ Modules et Extensions
+## 🖥️ Modules and Extensions
 
-Le bot utilise plusieurs extensions (`cogs`) pour une gestion modulaire :
-- `Aide.py` : Commandes d'aide et d'assistance.
-- `BotUpt.py` : Gestion de l'uptime et des statistiques.
-- `Divers.py` : Informations sur le serveur et les utilisateurs.
-- `Events.py` : Gestion des événements serveur et membres.
-- `Owner.py` : Commandes exclusives au propriétaire du bot.
-- `Snipe.py` : Récupération des derniers messages supprimés.
-- `logMessage.py` : Système de gestion des logs.
-- `utils.py` : Fonctions utilitaires et gestion des configurations.
+The bot uses multiple extensions (`cogs`) for modular management:
+- `Aide.py`: Help and assistance commands.
+- `BotUpt.py`: Uptime and statistics management.
+- `Divers.py`: Server and user information.
+- `Events.py`: Server and member event management.
+- `Owner.py`: Commands exclusive to the bot owner.
+- `Snipe.py`: Retrieval of recently deleted messages.
+- `logMessage.py`: Logging management system.
+- `utils.py`: Utility functions and configuration management.
 
-## ⚠️ Avertissement
+## ⚠️ Warning
 
-Ce projet est destiné à un usage éducatif et ne doit pas être utilisé sur des serveurs en production sans modifications adaptées.
+This project is intended for educational purposes and should not be used on production servers without appropriate modifications.
 
-## 📜 Licence
+## 📜 License
 
-Ce projet est sous licence MIT. Vous êtes libre de le modifier et de le redistribuer.
+This project is licensed under the MIT license. You are free to modify and redistribute it.
